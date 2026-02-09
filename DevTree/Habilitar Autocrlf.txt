@@ -1,0 +1,11 @@
+Usar la configuración core.autocrlf en true es ideal para proyectos que tienen colaboradores en diferentes sistemas operativos. Esto hará que Git convierta automáticamente los finales de línea según sea necesario.
+
+Ejecuta este comando en tu terminal:
+    git config --global core.autocrlf true
+
+
+
+Archivos .gitattributes
+Para mayor control sobre cómo se manejan los finales de línea en tu proyecto específico, considera usar un archivo .gitattributes en la raíz del repositorio. Por ejemplo, puedes agregar lo siguiente:
+    * text=auto
+    *.json text eol=lf
